@@ -13,8 +13,16 @@ class Controller
 		return require ROOT.DS.'bootstrap.php';
 	}
 
-	public function render($view){
+	public function render($view, $array = []){
+
+		if (!empty($array)) {
+			foreach ($array as $key => $value) {
+				$this->param[$key] = $value;
+			}
+		}
+
 		extract($this->param);
+
 		$view = ROOT.DS.'src/views/pages/'.$view.'.php';
 		ob_start();
 		require($view);

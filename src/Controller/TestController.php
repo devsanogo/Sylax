@@ -14,8 +14,7 @@ class TestController extends Controller
 		$em = $this->entityManager();
 		$allTest = $em->getRepository(Test::class)->findAll();
 
-		$this->param['allTest'] = $allTest;
-		$this->render('index');
+		$this->render('index', array( 'allTest' => $allTest, ));
 	}
 
 	public function create(){
@@ -39,8 +38,7 @@ class TestController extends Controller
 
 		$test = $em->getRepository(Test::class)->find($param);
 
-		$this->param['test'] = $test;
-		$this->render('show');
+		$this->render('show', array('test' => $test));
 	}
 
 	public function edit(){
@@ -52,8 +50,7 @@ class TestController extends Controller
 
 		$test = $em->getRepository(Test::class)->find($param);
 
-		$this->param['test'] = $test;
-		$this->render('edit');
+		$this->render('edit', array('test' => $test));
 	}
 
 	public function update(){
