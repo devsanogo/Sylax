@@ -29,54 +29,42 @@ class TestController extends Controller
 		header('Location: index');
 	}
 
-	public function show(){
+	public function show($p){
 
 		$em = $this->entityManager();
 
-		$p = explode('/', $_GET['uri']);
-		$param = end($p);
-
-		$test = $em->getRepository(Test::class)->find($param);
+		$test = $em->getRepository(Test::class)->find($p[0]);
 
 		$this->render('show', array('test' => $test));
 	}
 
-	public function edit(){
+	public function edit($p){
 
 		$em = $this->entityManager();
 
-		$p = explode('/', $_GET['uri']);
-		$param = end($p);
-
-		$test = $em->getRepository(Test::class)->find($param);
+		$test = $em->getRepository(Test::class)->find($p[0]);
 
 		$this->render('edit', array('test' => $test));
 	}
 
-	public function update(){
+	public function update($p){
 
 		$em = $this->entityManager();
 
-		$p = explode('/', $_GET['uri']);
-		$param = end($p);
-
-		$test = $em->getRepository(Test::class)->find($param);
+		$test = $em->getRepository(Test::class)->find($p[0]);
 
 		$test->setLibelle($_POST['text']);
 		$em->persist($test);
 		$em->flush();
 
-		header('Location: ../modifier/'.$param);
+		header('Location: ../modifier/'.$p[0]);
 	}
 
-	public function delete(){
+	public function delete($p){
 
 		$em = $this->entityManager();
 
-		$p = explode('/', $_GET['uri']);
-		$param = end($p);
-
-		$test = $em->getRepository(Test::class)->find($param);
+		$test = $em->getRepository(Test::class)->find($p[0]);
 
 		$em->remove($test);
 		$em->flush();

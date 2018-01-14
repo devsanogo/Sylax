@@ -9,10 +9,11 @@ class Controller
 {
 	protected $param = array();
 
+
 	public function entityManager(){
 		return require ROOT.DS.'bootstrap.php';
 	}
-
+	
 	public function render($view, $array = []){
 
 		if (!empty($array)) {
@@ -29,10 +30,5 @@ class Controller
 		$layout_content = ob_get_clean();
 
 		require ROOT.DS.'src/views/base.php';
-	}
-
-	public function error(){	
-
-		$this->render('error'); 
 	}
 }
