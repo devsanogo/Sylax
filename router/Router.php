@@ -55,9 +55,6 @@ class Router
 
 				$useMethod = $this->_method[$listKey];
 
-				$domain = strstr($useMethod, '@', true);
-				$action = $this->strstr_after($useMethod, '@');
-
 
 				foreach ($fakeUri as $key => $value) 
 				{
@@ -68,6 +65,10 @@ class Router
 				}
 
 				if (is_string($useMethod)) {
+
+					$domain = strstr($useMethod, '@', true);
+					$action = $this->strstr_after($useMethod, '@');
+					
 					$domain = strstr($useMethod, '@', true);
 					$controller = $domain.'Controller';
 					$called = new $controller();
