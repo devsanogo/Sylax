@@ -16,10 +16,8 @@ class Controller
 	
 	public function render($view, $array = []){
 
-		if (!empty($array)) {
-			foreach ($array as $key => $value) {
-				$this->param[$key] = $value;
-			}
+		foreach ($array as $key => $value) {
+			$this->param[$key] = $value;
 		}
 
 		extract($this->param);

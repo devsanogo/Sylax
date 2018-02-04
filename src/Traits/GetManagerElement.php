@@ -1,4 +1,11 @@
 <?php
+# src/Traits/GetManagerElement.php
+
+/**
+ * Header - General Platform Template
+ *
+ * @author      Anzoumana SANOGO
+ */
 
 namespace sylax\Traits;
 
