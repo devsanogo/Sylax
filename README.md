@@ -38,4 +38,11 @@ php vendor/doctrine/orm/bin/doctrine.php orm:schema-tool:update --force
 
 ```
 
+6 - Acceder à la page d'accueil : 
+
+```
+http://localhost/sylax
+
+```
+
 **NB: Pour un demarrage rapide ce depot contient déjà un exemple de CRUD** 
