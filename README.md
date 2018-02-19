@@ -1,6 +1,6 @@
 # Sylax PHP #
 
-Framework PHP simple et leger facilitant la conception de tout type d'application web.
+Micro Framework PHP simple et leger facilitant la conception de tout type d'application web.
 Sylax est equipé d'un ORM (Doctrine) pour la gestion des requetes côté base de donnée.
 
 L'installation est simple et rapide et se fait en suivant les differentes étapes ci-dessous :
