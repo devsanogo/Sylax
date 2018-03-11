@@ -28,5 +28,6 @@
     require_once APP_PATH . 'includes/functions.inc.php';
     
     date_default_timezone_set('Africa/Abidjan');
+    session_start();
     
 ?>
