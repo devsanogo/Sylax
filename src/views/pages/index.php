@@ -1,3 +1,5 @@
+<?php $_title = "Accueil" ?> 
+
 <div class="row">
 	<div class="col-sm-4">
 	<h3>Remplissez le formulaire</h3>

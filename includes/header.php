@@ -9,7 +9,7 @@
      $css_files = array('bootstrap.min.css', 'style.css');
     
      $_description = (!empty($_title) ? $_title.' :: ' : '') . META_DESCRIPTION;
-     $_title = (!empty($_title) ? $_title.' :: ' : '').META_TITLE;
+     $_title = (!empty($_title) ? $_title.' | ' : '').META_TITLE;
      $_keywords = (!empty($_keywords) ? $_keywords.', ' : '').META_KEYWORDS;
 
 ?>

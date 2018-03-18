@@ -1,3 +1,4 @@
+<?php $_title = "Details ".$test->getLibelle(); ?> 
 
 <div class="row">
 	<div class="col-sm-6">

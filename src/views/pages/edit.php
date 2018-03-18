@@ -1,3 +1,5 @@
+<?php $_title = "Modification ".$test->getLibelle(); ?> 
+
 <div class="row">
 	<div class="col-sm-6">
 	<h1>Modification du texte <span style="color:#F00"><?php echo $test->getLibelle(); ?></span></h1>
