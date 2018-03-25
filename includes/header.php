@@ -21,8 +21,8 @@
     <title><?php echo $_title?></title>
     <meta name="description" content="<?php echo $_description?>"/>
     <meta name="keywords" content="<?php echo $_keywords?>"/>
-    <link href="<?php echo IMG_DIR?>favicon.png" type="image/png" rel="shortcut icon"/>
-    <link rel="icon" href="<?php echo IMG_DIR?>favicon.png" type="image/x-icon"/>
+    <link href="<?php Helper::asset('favicon.png') ?>" type="image/png" rel="shortcut icon"/>
+    <link rel="icon" href="<?php Helper::asset('favicon.png') ?>" type="image/x-icon"/>
 
     <?php 
         head_file(array(), $css_files);
@@ -37,7 +37,7 @@
     <div class="col-sm-2 sidenav">
     </div>
     <div class="col-sm-8 text-left"> 
-    <h1><img src="<?php echo IMG_DIR?>logo.png">Sylax PHP - Page d'accueil </h1>
+    <h1><img src="<?php Helper::asset('logo.png') ?>">Sylax PHP - Page d'accueil </h1>
        
       <p style="font-size:20px">Ce mini TP est un exemple de CRUD permettant ainsi une prise en main rapide </p>
       <hr>

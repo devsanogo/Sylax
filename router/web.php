@@ -17,5 +17,6 @@ $route->add('detail/.+', 'Test@show');
 $route->add('modifier/.+', 'Test@edit');
 $route->add('update/.+', 'Test@update');
 $route->add('suppression/.+', 'Test@delete');
+$route->add('test', 'Test@test');
 
 $route->submit();

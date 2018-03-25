@@ -26,6 +26,8 @@
     require_once APP_PATH . 'includes/var.globals.inc.php';
     require_once APP_PATH . 'includes/var.meta.inc.php';
     require_once APP_PATH . 'includes/functions.inc.php';
+    require_once APP_PATH . 'includes/helper.inc.php';
+    require_once APP_PATH . 'includes/Session.php';
     
     date_default_timezone_set('Africa/Abidjan');
     session_start();

@@ -4,7 +4,7 @@
 	<div class="col-sm-4">
 	<h3>Remplissez le formulaire</h3>
 
-	<form method="POST" action="<?php echo APP_URL_RAW ?>/nouveau">
+	<form method="POST" action="<?php Helper::path('nouveau') ?>">
 		<div class="form-group">
 			<input id="text" type="text" name="text" required placeholder="entrer un mot ici ..." class="form-control">
 		</div>
@@ -31,9 +31,9 @@
 						<td><?php echo $test->getLibelle(); ?></td>
 						<td><?php echo $test->getCreated()->format('d-m-Y'); ?></td>
 						<td>
-							<a href="<?php echo APP_URL_RAW ?>/detail/<?php echo $test->getId() ?>" class="btn btn-default btn-xs">Voir</a>
-							<a href="<?php echo APP_URL_RAW ?>/modifier/<?php echo $test->getId() ?>" class="btn btn-primary btn-xs">Modifier</a>
-							<a href="<?php echo APP_URL_RAW ?>/suppression/<?php echo $test->getId() ?>" class="btn btn-danger btn-xs">Supprimer</a>
+							<a href="<?php Helper::path('detail', array($test->getId())) ?>" class="btn btn-default btn-xs">Voir</a>
+							<a href="<?php Helper::path('modifier', array($test->getId())) ?>" class="btn btn-primary btn-xs">Modifier</a>
+							<a href="<?php Helper::path('suppression', array($test->getId())) ?>" class="btn btn-danger btn-xs">Supprimer</a>
 						</td>
 					</tr>
 				<?php endforeach; ?>

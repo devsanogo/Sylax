@@ -14,4 +14,4 @@
 	</div>
 </div>
 
-<a class="btn btn-primary" href="<?php echo APP_URL_RAW ?>/index">Retour</a>
+<a class="btn btn-primary" href="<?php Helper::path('index') ?>">Retour</a>
