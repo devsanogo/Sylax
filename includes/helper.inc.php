@@ -55,10 +55,10 @@ class Helper
 					echo IMG_DIR.$file;
 					break;
 				case 'js':
-					echo CSS_DIR.$file;
+					echo JS_DIR.$file;
 					break;
 				case 'css':
-					echo JS_DIR.$file;
+					echo CSS_DIR.$file;
 					break;
 				
 				default:
